@@ -20,27 +20,38 @@
 </header>
 
 <main>
-    <section class="booking">
-        <h1>Book Your Activity</h1>
-        <form action="payment.html" method="GET">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
+    <section class="booking-form">
+        <h1>Booking Details</h1>
+        <form action="payment.html" method="post">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
 
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
 
-            <label for="participants">Number of Participants:</label>
-            <select id="participants" name="participants">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="date-time">Select Date & Time:</label>
+            <input type="datetime-local" id="date-time" name="date-time" required>
+
+            <label for="participants">No. of Participants:</label>
+            <select id="participants" name="participants" required>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
-                <option value="4">4+</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
             </select>
 
-            <label for="date">Select Date:</label>
-            <input type="date" id="date" name="date" required>
+            <label for="accommodations">Special Accommodations:</label>
+            <textarea id="accommodations" name="accommodations" rows="4"></textarea>
 
-            <button type="submit" class="cta-button">Proceed to Payment</button>
+            <button type="submit">Next</button>
         </form>
     </section>
 </main>
