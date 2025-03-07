@@ -23,38 +23,57 @@
     <section class="booking-form">
         <h1>Booking Details</h1>
         <form action="payment.html" method="post">
-            <label for="first-name">First Name:</label>
-            <input type="text" id="first-name" name="first-name" required>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+            </div>
 
-            <label for="last-name">Last Name:</label>
-            <input type="text" id="last-name" name="last-name" required>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+            </div>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="date-time">Select Date & Time:</label>
+                    <input type="datetime-local" id="date-time" name="date-time" required>
+                </div>
 
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" required>
+                <div class="form-group">
+                    <label for="participants">No. of Participants:</label>
+                    <select id="participants" name="participants" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </div>
+            </div>
 
-            <label for="date-time">Select Date & Time:</label>
-            <input type="datetime-local" id="date-time" name="date-time" required>
-
-            <label for="participants">No. of Participants:</label>
-            <select id="participants" name="participants" required>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-            </select>
-
-            <label for="accommodations">Special Accommodations:</label>
-            <textarea id="accommodations" name="accommodations" rows="4"></textarea>
+            <div class="form-group">
+                <label for="accommodations">Special Accommodations:</label>
+                <textarea id="accommodations" name="accommodations" rows="4"></textarea>
+            </div>
 
             <button type="submit" class="cta-button">Next</button>
         </form>
     </section>
 </main>
+
 
 <footer>
     <p>&copy; 2025 Taniti Travel</p>
