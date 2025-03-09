@@ -248,3 +248,12 @@ footer {
 .transportation-card:hover {
     transform: scale(1.05);
 }
+
+.transportation-card img {
+    width: 100%;  /* Ensures images are responsive */
+    max-width: 200px;  /* Set a reasonable max width */
+    height: auto;  /* Maintains aspect ratio */
+    display: block;
+    margin: 0 auto 10px;  /* Centers image & adds spacing */
+    border-radius: 8px;  /* Rounds corners slightly */
+}
