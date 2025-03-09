@@ -84,6 +84,10 @@ nav ul li a:hover {
     border-radius: 10px;
 }
 
+.hidden {
+    display: none;
+}
+
 .filters {
     display: flex;
     justify-content: center;
