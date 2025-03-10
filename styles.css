@@ -112,6 +112,20 @@ nav ul li a:hover {
     display: none;
 }
 
+.activity-summary {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.activity-summary p {
+    margin: 5px 0;
+}
+
 .filters {
     display: flex;
     justify-content: center;
