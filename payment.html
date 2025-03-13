@@ -22,14 +22,21 @@
 <main>
   <section class="activity-summary">
     <h2>Activity Summary</h2>
-    <p><strong>Activity:</strong> Snorkeling Adventure</p>
-    <p><strong>Date & Time:</strong> [User Selected Date & Time]</p>
-    <p><strong>Participants:</strong> [User Selected Participants]</p>
-    <p><strong>Total Cost:</strong> $[Calculated Price]</p>
+    <p><strong>Activity:</strong> <span id="activity-title">Loading...</span></p>
+    <p><strong>Date & Time:</strong> <span id="activity-date">Loading...</span></p>
+    <p><strong>Participants:</strong> <span id="activity-participants">Loading...</span></p>
+    <p><strong>Total Cost:</strong> <span id="activity-price">Calculating...</span></p>
   </section>
+
   <section class="payment-form">
     <h1>Enter Payment Details</h1>
-    <form action="confirmation.html" method="POST">
+    <form action="confirmation.html" method="GET">
+      <!-- Hidden fields to carry data to confirmation -->
+      <input type="hidden" id="activity" name="activity">
+      <input type="hidden" id="participants" name="participants">
+      <input type="hidden" id="date-time" name="date-time">
+      <input type="hidden" id="total-price" name="total-price">
+
       <div class="form-row">
         <div class="form-group">
           <label for="first-name">First Name:</label>
@@ -88,6 +95,9 @@
     </form>
   </section>
 </main>
+
+<script src="js/activityData.js"></script>
+<script src="js/payment.js"></script>
 
 <footer>
   <p>&copy; 2025 Taniti Travel</p>
