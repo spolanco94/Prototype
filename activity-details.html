@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Taniti - Activity Details</title>
   <link rel="stylesheet" href="styles.css">
-  <script defer src="script.js"></script>
+  <script defer src="js/script.js"></script>
 </head>
+
 <body>
 <header>
   <nav>
@@ -21,13 +22,13 @@
 
 <main>
   <section class="activity-details">
-    <h1>Snorkeling Adventure</h1>
-    <img src="placeholder.jpg" alt="Snorkeling Adventure">
-    <p>Experience the beauty of Taniti’s underwater world with expert guides.</p>
-    <ul>
-      <li><strong>Duration:</strong> 2 hours</li>
-      <li><strong>Price:</strong> $50 per person</li>
-      <li><strong>Location:</strong> Coral Bay, Taniti</li>
+    <h1 id="activity-title">Loading...</h1>
+    <img id="activity-image" src="placeholder.jpg" alt="Activity Image">
+    <p id="activity-description"></p>
+    <ul id="activity-info">
+      <li><strong>Duration:</strong> <span id="activity-duration"></span></li>
+      <li><strong>Price:</strong> <span id="activity-price"></span></li>
+      <li><strong>Location:</strong> <span id="activity-location"></span></li>
     </ul>
     <a href="booking.html" class="cta-button">Book Now</a>
   </section>
@@ -57,6 +58,8 @@
     </div>
   </section>
 </main>
+
+<script defer src="js/activity-details.js"></script>
 
 <footer>
   <p>&copy; 2025 Taniti Travel</p>
