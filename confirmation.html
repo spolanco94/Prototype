@@ -24,17 +24,19 @@
         <h1>Booking Confirmed!</h1>
         <p>Thank you for booking your activity. Your reservation details are below:</p>
         <ul>
-            <li><strong>Activity:</strong> Snorkeling Adventure</li>
-            <li><strong>Date:</strong> [Selected Date]</li>
-            <li><strong>Participants:</strong> [Number of Participants]</li>
-            <li><strong>Total Cost:</strong> $[Total Price]</li>
-            <li><strong>Booking Reference:</strong> #123456</li>
+            <li><strong>Activity:</strong> <span id="activity-title">Loading...</span></li>
+            <li><strong>Date & Time:</strong> <span id="activity-date">Loading...</span></li>
+            <li><strong>Participants:</strong> <span id="activity-participants">Loading...</span></li>
+            <li><strong>Total Cost:</strong> <span id="activity-price">Calculating...</span></li>
+            <li><strong>Booking Reference:</strong> <span id="booking-reference">#123456</span></li>
         </ul>
         <p>Want to book another activity? Simply return to the Activities Page and make a new booking.</p>
         <a href="index.html" class="cta-button">Return to Homepage</a>
         <a href="activities.html" class="cta-button">Book Another Activity</a>
     </section>
 </main>
+
+<script src="js/confirmation.js"></script>
 
 <footer>
     <p>&copy; 2025 Taniti Travel</p>

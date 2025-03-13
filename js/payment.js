@@ -12,15 +12,15 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("activity-participants").textContent = participants;
 
         // Calculate total cost based on number of participants
-        let basePrice = parseFloat(activity.price.replace(/\D/g, "")); // Extract numbers from price
+        let basePrice = parseFloat(activity.price.replace(/\D/g, ""));
         let totalPrice = basePrice * (participants ? parseInt(participants) : 1);
         document.getElementById("activity-price").textContent = `$${totalPrice}`;
 
-        // Store data in hidden fields for confirmation.html
-        document.getElementById("activity").value = activityKey;
-        document.getElementById("participants").value = participants;
-        document.getElementById("date-time").value = dateTime;
-        document.getElementById("total-price").value = totalPrice;
+        // Store data in sessionStorage for confirmation page
+        sessionStorage.setItem("activityName", activity.title);
+        sessionStorage.setItem("activityDate", dateTime);
+        sessionStorage.setItem("activityParticipants", participants);
+        sessionStorage.setItem("activityTotalCost", `$${totalPrice}`);
     } else {
         document.getElementById("activity-title").textContent = "Activity Not Found";
         document.getElementById("activity-price").textContent = "N/A";
