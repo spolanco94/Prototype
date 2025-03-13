@@ -22,12 +22,17 @@
 <main>
     <section class="activity-summary">
         <h2>Activity Summary</h2>
-        <p><strong>Activity:</strong> Snorkeling Adventure</p>
-        <p><strong>Total Cost:</strong> $[Calculated Price]</p>
+        <p><strong>Activity:</strong> <span id="activity-title">Loading...</span></p>
+        <p><strong>Duration:</strong> <span id="activity-duration">Loading...</span></p>
+        <p><strong>Location:</strong> <span id="activity-location">Loading...</span></p>
     </section>
+
     <section class="booking-form">
         <h1>Booking Details</h1>
-        <form action="payment.html" method="post">
+        <form action="payment.html" method="get">
+            <!-- Hidden field to carry activity name to payment page -->
+            <input type="hidden" id="activity" name="activity">
+
             <div class="form-row">
                 <div class="form-group">
                     <label for="first-name">First Name:</label>
@@ -79,6 +84,8 @@
     </section>
 </main>
 
+<script src="js/activityData.js"></script>
+<script defer src="js/booking.js"></script>
 
 <footer>
     <p>&copy; 2025 Taniti Travel</p>
