@@ -86,9 +86,11 @@ nav ul li a:hover {
 
 .activities-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    padding: 20px;
+    padding: 20px 0;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .activity {
@@ -105,7 +107,15 @@ nav ul li a:hover {
 
 .activity img {
     width: 100%;
+    height: 180px;
+    object-fit: cover;
     border-radius: 10px;
+}
+
+.activity p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
 }
 
 .hidden {

@@ -21,15 +21,18 @@
 
 <main>
     <section class="activities">
-        <h1>Explore Activities</h1>
+        <h1>Explore Activities in Taniti</h1>
+        <p>From scenic hikes to exciting nightlife, discover the best experiences Taniti has to offer.</p>
+
         <div class="filters">
             <label for="category">Category:</label>
             <select id="category">
                 <option value="all">All</option>
-                <option value="adventure">Adventure</option>
-                <option value="relaxation">Relaxation</option>
+                <option value="outdoor">Outdoor Adventures</option>
+                <option value="tours">Guided Tours</option>
                 <option value="water">Water Activities</option>
-                <option value="cultural">Cultural</option>
+                <option value="entertainment">Entertainment & Nightlife</option>
+                <option value="relaxation">Relaxation & Scenic</option>
             </select>
 
             <label for="price-range">Price Range:</label>
@@ -48,54 +51,6 @@
                 <option value="long">More than 4 hours</option>
             </select>
         </div>
-        <div class="activities-grid">
-            <div class="activity">
-                <img src="img/subtle-cinematics-O5Fr1BZ-aR4-unsplash.jpg" alt="Photo by Subtle Cinematics on Unsplash">
-                <h3>Activity 1</h3>
-                <a href="activity-details.html" class="cta-button">Details</a>
-            </div>
-            <div class="activity">
-                <img src="img/hiroko-yoshii-9y7y26C-l4Y-unsplash.jpg" alt="Photo by Hiroko Yoshii on Unsplash">
-                <h3>Activity 2</h3>
-                <a href="activity-details.html" class="cta-button">Details</a>
-            </div>
-            <div class="activity">
-                <img src="img/subtle-cinematics-VHt_sWcj70I-unsplash.jpg" alt="Photo by Subtle Cinematics on Unsplash">
-                <h3>Activity 3</h3>
-                <a href="activity-details.html" class="cta-button">Details</a>
-            </div>
-            <div class="activity">
-                <img src="img/subtle-cinematics-O5Fr1BZ-aR4-unsplash.jpg" alt="Photo by Subtle Cinematics on Unsplash">
-                <h3>Activity 4</h3>
-                <a href="activity-details.html" class="cta-button">Details</a>
-            </div>
-            <div class="activity">
-                <img src="img/hiroko-yoshii-9y7y26C-l4Y-unsplash.jpg" alt="Photo by Hiroko Yoshii on Unsplash">
-                <h3>Activity 5</h3>
-                <a href="activity-details.html" class="cta-button">Details</a>
-            </div>
-            <div class="activity">
-                <img src="img/subtle-cinematics-VHt_sWcj70I-unsplash.jpg" alt="Photo by Subtle Cinematics on Unsplash">
-                <h3>Activity 6</h3>
-                <a href="activity-details.html" class="cta-button">Details</a>
-            </div>
-            <div class="activity hidden">
-                <img src="img/subtle-cinematics-O5Fr1BZ-aR4-unsplash.jpg" alt="Photo by Subtle Cinematics on Unsplash">
-                <h3>Activity 7</h3>
-                <a href="activity-details.html" class="cta-button">Details</a>
-            </div>
-            <div class="activity hidden">
-                <img src="img/hiroko-yoshii-9y7y26C-l4Y-unsplash.jpg" alt="Photo by Hiroko Yoshii on Unsplash">
-                <h3>Activity 8</h3>
-                <a href="activity-details.html" class="cta-button">Details</a>
-            </div>
-            <div class="activity hidden">
-                <img src="img/subtle-cinematics-VHt_sWcj70I-unsplash.jpg" alt="Photo by Subtle Cinematics on Unsplash">
-                <h3>Activity 9</h3>
-                <a href="activity-details.html" class="cta-button">Details</a>
-            </div>
-        </div>
-        <button id="load-more" class="cta-button">Load More</button>
 
         <section class="entertainment-attractions">
             <h2>Entertainment & Attractions</h2>
@@ -110,6 +65,51 @@
             <h3>Merriton Landing</h3>
             <p>Merriton Landing is a growing tourist hotspot featuring unique attractions, local shops, and waterfront dining.</p>
         </section>
+
+        <div class="activities-grid">
+            <div class="activity" data-category="water" data-price="high" data-duration="long">
+                <img src="img/subtle-cinematics-O5Fr1BZ-aR4-unsplash.jpg" alt="Photo by Subtle Cinematics on Unsplash">
+                <h3>Snorkeling in Yellow Leaf Bay</h3>
+                <p>Explore Taniti’s vibrant marine life with a guided snorkeling tour.</p>
+                <a href="activity-details.html" class="cta-button">View Details</a>
+            </div>
+
+            <div class="activity" data-category="outdoor" data-price="medium" data-duration="medium">
+                <img src="img/kyle-cleveland-VDPFEyIrAn0-unsplash.jpg" alt="Photo by Kyle Cleveland on Unsplash">
+                <h3>Rainforest Zip-Lining</h3>
+                <p>Experience an adrenaline rush as you zip-line through the lush rainforest canopy.</p>
+                <a href="activity-details.html" class="cta-button">View Details</a>
+            </div>
+
+            <div class="activity hidden" data-category="outdoor" data-price="high" data-duration="medium">
+                <img src="img/toby-elliott-Nqdx6-LW4VE-unsplash.jpg" alt="Photo by Toby Elliott on Unsplash">
+                <h3>Volcano Hiking Tour</h3>
+                <p>Take a guided trek up Taniti’s active volcano and witness breathtaking views.</p>
+                <a href="activity-details.html" class="cta-button">View Details</a>
+            </div>
+
+            <div class="activity hidden" data-category="tours" data-price="medium" data-duration="long">
+                <img src="img/greysen-johnson-cZVzzFadTMc-unsplash.jpg" alt="Photo by Greysen Johnson on Unsplash">
+                <h3>Chartered Fishing Tour</h3>
+                <p>Join expert fishermen for an unforgettable deep-sea fishing experience.</p>
+                <a href="activity-details.html" class="cta-button">View Details</a>
+            </div>
+
+            <div class="activity hidden" data-category="entertainment" data-price="low" data-duration="medium">
+                <img src="img/dovlet-hojayev-rfOFRwKHtJM-unsplash.jpg" alt="Photo by Dovlet Hojayev on Unsplash">
+                <h3>Local Pubs & Microbrewery</h3>
+                <p>Relax and enjoy locally brewed craft beers at Taniti’s renowned microbrewery.</p>
+                <a href="activity-details.html" class="cta-button">View Details</a>
+            </div>
+
+            <div class="activity hidden" data-category="relaxation" data-price="medium" data-duration="short">
+                <img src="img/spencer-watson-LMq1gYdygxo-unsplash.jpg" alt="Photo by Spencer Watson on Unsplash">
+                <h3>Helicopter Island Tour</h3>
+                <p>Soar above Taniti and experience breathtaking aerial views of the island.</p>
+                <a href="activity-details.html" class="cta-button">View Details</a>
+            </div>
+        </div>
+        <button id="load-more" class="cta-button">Load More</button>
     </section>
 </main>
 

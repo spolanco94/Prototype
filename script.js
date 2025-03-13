@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const loadMoreButton = document.getElementById("load-more");
     const hiddenActivities = document.querySelectorAll(".activity.hidden");
-    let activitiesPerClick = 3;
+    let activitiesPerClick = 2;
 
     // Load more activities button
     if(loadMoreButton) {
